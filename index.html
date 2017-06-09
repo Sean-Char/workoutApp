@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="workOutApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Work It or Twerk It</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+  </head>
+  <body>
+
+
+
+    <nav-bar-directive toggle-left="toggleLeft()" toggle-right="toggleRight()"></nav-bar-directive>
+
+
+    <!-- Angular Material requires Angular.js Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-animate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-aria.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-messages.min.js"></script>
+
+    <!-- Angular Material Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-sanitize/1.5.9/angular-sanitize.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers/sideNavCtrl.js"></script>
+    <script src="controllers/getExerciseCatCtrl.js"></script>
+    <script src="controllers/excerciseDescCtrl.js"></script>
+    <script src="services/myService.js"></script>
+    <script src="directives/myDirective.js"></script>
+  </body>
+</html>

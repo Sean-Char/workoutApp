@@ -1,0 +1,40 @@
+<div ng-controller="sidebarNavCtrl" layout="column" style="height: 500px;" ng-cloak>
+  <section layout="row" flex>
+
+<md-sidenav class="md-sidenav-left" md-component-id="left"
+            md-disable-backdrop md-whiteframe="4">
+
+    <md-toolbar class="md-theme-indigo">
+      <h1 class="md-toolbar-tools"><a ui-sref="home">Work Outs</a></h1>
+    </md-toolbar>
+
+    <md-content layout-margin>
+      <ul class="nav-links">
+        <li><a ng-click="toggleLeft()" ui-sref="muscleGroup({id:'10'})">Abs</a></li>
+        <li><a ng-click="toggleLeft()" ui-sref="muscleGroup({id:'8'})">Arms</a></li>
+        <li><a ng-click="toggleLeft()" ui-sref="muscleGroup({id:'12'})">Back</a></li>
+        <li><a ng-click="toggleLeft()" ui-sref="muscleGroup({id:'14'})">Calves</a></li>
+        <li><a ng-click="toggleLeft()" ui-sref="muscleGroup({id:'11'})">Chest</a></li>
+        <li><a ng-click="toggleLeft()" ui-sref="muscleGroup({id:'9'})">Legs</a></li>
+        <li><a ng-click="toggleLeft()" ui-sref="muscleGroup({id:'13'})">Shoulders</a></li>
+      </ul>
+
+    <md-button ng-click="toggleLeft()" class="md-accent">
+        Close this Sidenav
+    </md-button>
+
+  </md-content> <!--end md-content-->
+</md-sidenav> <!--end md-sidenav-->
+
+
+
+<md-content flex layout-padding>
+      <span ng-click="toggleLeft()" class="md-raised">
+        	&#x2630;
+      </span>
+      <ui-view></ui-view>
+</md-content> <!--end md-content-->
+
+
+  </section>
+</div>
