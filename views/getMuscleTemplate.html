@@ -1,4 +1,16 @@
-<div ng-repeat="exercise in exercises"><br >
-  <a ui-sref="exerciseDesc({name:exercise.name})" ng-bind-html="exercise.name"></a>
+<div class="getmuscleContain">
+
+<div class="bgOpacity">
+  <div  ng-if="!exercises" layout="row" layout-sm="column" layout-align="space-around">
+      <md-progress-circular md-mode="indeterminate"></md-progress-circular>
+  </div>
+
+
+
+  <div ng-repeat="exercise in exercises" class="FlexContainer" layout layout-wrap layout-padding layout-align="center">
+    <div class="FlexItem" ui-sref="exerciseDesc({name:exercise.name})" ng-bind-html="exercise.name"></div>
+  </div>
+</div>
+
 
 </div>

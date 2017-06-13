@@ -1,4 +1,9 @@
+<div class="exerciseName">
+  <h1 ng-bind-html="exercise.name"></h1>
+</div>
 
-<h1 ng-bind-html="exercise.name"></h1>
-<div ng-bind-html="exercise.description"></div>
-<img  ng-repeat="img in exerciseImg" ng-src="{{img}}" alt="">
+<div class="descriptions" ng-bind-html="exercise.description"></div>
+
+<div class="descImg">
+  <img  ng-repeat="img in exerciseImg" ng-src="{{img}}" alt="">
+</div>

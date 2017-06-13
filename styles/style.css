@@ -1,11 +1,19 @@
-.nav-links a{
+@import url('https://fonts.googleapis.com/css?family=Black+Ops+One');
 
-  text-decoration: none;
-  line-height: 35px;
-  display: flex;
-  justify-content: center;
 
+.nav-links{
+  max-width: 100px;
+  margin: 0 auto;
 }
+.nav-links li{
+  line-height: 35px;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+}
+
 
  ul.nav-links {
   padding: 0;
@@ -14,4 +22,104 @@
 .md-toolbar-tools {
   display: flex;
   justify-content: center;
+
+}
+
+.md-accent {
+  display: flex;
+  justify-content: center;
+  margin-left: 27%;
+}
+
+.md-toolbar-tools {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 2em;
+
+}
+
+
+/*.FlexContainer {
+  background: hsla(0,0%,0%,.1);
+
+}*/
+
+.FlexItem {
+  font-family: 'Black Ops One', cursive;
+  background: #3F51B5;
+  margin: 1em;
+  min-width: 400px;
+  padding: 1em;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+
+}
+.home_container{
+  background: url("../img/arm-workout-hero.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 50px;
+  margin: 0;
+  color: white;
+}
+.getmuscleContain {
+  background: url("../img/TriceptWorkoutModel.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+
+}
+.bgOpacity {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 50px 50px;
+  margin: 0;
+}
+.exerciseName {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
+.descriptions {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  font-size: 20px;
+  margin: 1em;
+  padding: 1.5em;
+}
+
+.descImg {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+}
+
+.descImg img {
+  width: 25%;
+  height: 25%;
+}
+
+
+.searchTitle {
+  display: flex;
+  justify-content: center;
+  margin-top: 8%;
+  font-family: 'Black Ops One', cursive;
+}
+
+.zipInput {
+  display: flex;
+  justify-content: center;
+}
+
+.exerciseName {
+  font-family: 'Black Ops One', cursive;
 }
