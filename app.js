@@ -7,7 +7,7 @@ angular.module('workOutApp', ['ngMaterial', 'ui.router', 'ngSanitize'])
     $stateProvider
     .state('home', {
         url: '/',
-        templateUrl: "../views/home.html"
+        templateUrl: "/views/home.html"
     })
     .state('muscleGroup', {
       url: '/muscleGroup/:id',
